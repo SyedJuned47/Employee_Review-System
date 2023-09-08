@@ -1,0 +1,52 @@
+
+<div class="d-flex justify-content-center p-4 p-md-10"  style="background-color: orchid">
+  <form
+    class="rounded p-3 col-12 col-md-4 my-4 shadow-lg"
+    method="POST"
+    style="background-color: white;"
+    action="/create-session"
+  >
+    <h3 class="mb-4 text-center" style="color: blue;">Sign in</h3>
+    <!-- Email input -->
+    <div class="form-outline mb-3">
+      <h6><label class="form-label" for="email" style="color: blue;">Email Address</label></h6> 
+      <input
+      type="email"
+      id="email"
+      placeholder="Enter Email Address"
+      name="email"
+      class="form-control" />
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-3">
+      <h6><label class="form-label" for="password" style="color: blue;">Password</label></h6> 
+      <input
+        type="password"
+        placeholder="Enter Password"
+        id="password"
+        name="password"
+        class="form-control"
+      />
+    </div>
+
+    <div>
+      <!-- Login button -->
+      <button
+        type="submit"
+        class="btn btn-primary btn-block fw-semibold"
+        style="width: 100%"
+      >
+        LOGIN
+      </button>
+    </div>
+    <div>
+      <hr />
+    </div>
+
+    <!-- Link to redirect to signup page -->
+    <div class="text-center">
+      <p>Not an user? <a href="/sign-up">Register</a></p>
+    </div>
+  </form>
+</div>
